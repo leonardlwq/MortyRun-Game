@@ -27,7 +27,10 @@ This project was done for a object oriented programming course in UNSW.
 4. That should do it! :star: Go to src/unsw/dungeon/FrontendApplication.java :star: and click on 'Run' on top of the main function.
 
 
-**IMPORTANT**
+:heavy_exclamation_mark: **IMPORTANT** :heavy_exclamation_mark: The set-up is currently tested and working for macOS and Linux. 
+
+:heavy_exclamation_mark: **IMPORTANT** :heavy_exclamation_mark: for windows, first download git [here](https://git-scm.com/), then checkout into the 'windows' branch and follow setup steps 1 - 4.
+
 
 
 ## The different levels
@@ -35,16 +38,21 @@ This project was done for a object oriented programming course in UNSW.
 
 The client desires an application that lets the user move a player around a dungeon and try to overcome various challenges in order to "complete" the level by reaching some goal. 
 
+Here is how the start menu looks like:
 
-![Maze][lv]
+![Start][start]
 
-More advanced puzzles may contain things like boulders that need to be pushed onto floor switches,
+Be sure to read the instructions for the game and go on to select the different level maps! 
 
-![Boulders][boulders]
+![Rules][rules]
 
-enemies that need to be fought with weapons, or collectables like potions and treasure.
+![Select][select]
 
-![Advanced dungeon][advanced]
+Here's a glimpse as to how they look like!
+
+![Maze][lv] 
+![Maze2][lv1]
+
 
 ### Dungeon layout
 
@@ -64,6 +72,8 @@ To be specific, the layout of each dungeon is defined by a grid of squares, each
 | Enemy                | ![Enemy][enemy] | Constantly moves toward the player, stopping if it cannot move any closer. The player dies upon collision with an enemy. |
 | Sword                | ![Sword][sword] | This can be picked up the player and used to kill enemies. Only one sword can be carried at once. Each sword is only capable of 5 hits and disappears after that. One hit of the sword is sufficient to destroy any enemy. |
 | Invincibility potion | ![Invincibility][potion] | If the player picks this up they become invincible to enemies. Colliding with an enemy should result in their immediate destruction. Because of this, all enemies will run away from the player when they are invincible. The effect of the potion only lasts a limited time. |
+| Invincible mode      | ![Inv][inv] | This is how morty looks like in invincible mode. (After picking up potion) 
+| Armed mode           | ![Armed][armed] | This is how morty looks like in armed mode. (After picking up sword) 
 
 ### Goals
 
@@ -74,18 +84,13 @@ In addition to its layout, each dungeon also has a goal that defines what must b
 * Having a boulder on all floor switches.
 * Collecting all treasure.
 
-More complex goals can be built by logically composing goals. For example,
+More complex goals are being stated in the side panel in the game Dungeon window. 
 
-* Destroying all enemies AND getting to an exit
-* Collecting all treasure OR having a boulder on all floor switches
-* Getting to an exit AND (destroying all enemies OR collecting all treasure)
-
-If getting to an exit is one of a conjunction of conditions, it must be done last. For example, if the condition is to destroy all enemies AND get to an exit, the player must destroy the enemies *then* get to the exit.
 
 ### Input
 
 <details>
-<summary>notes for setting goals </summary>
+<summary> :memo: notes for setting goals (CLICK ME TO FIND OUT) </summary>
 <p>
 This application will read from a JSON file containing a complete specification of the dungeon (the initial position of entities, goal, etc.).
 
@@ -141,7 +146,6 @@ The client has given you free reign over the visual design of the program. Inclu
 have fun!
 ```
 
-You will demonstrate your application to your tutor in Week 10. You may be asked to justify your design decisions and explain how you worked with your partner.
 
 
 
@@ -156,7 +160,6 @@ You will demonstrate your application to your tutor in Week 10. You may be asked
 [portal]:        images/portalgreen.png
 [enemy]:         images/rick.png
 [sword]:         images/greatsword_1_new.png
-[invincibility]: images/brilliant_blue_new.png
 [treasure]:      images/gem.png
 [potion]:        images/red.png
 [inv]:           images/firemorty.png
