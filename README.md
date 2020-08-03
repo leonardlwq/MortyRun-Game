@@ -19,11 +19,13 @@ This project was done for a object oriented programming course in UNSW.
 1. Download and set-up Visual Studio Code here :point_right:   [VSCode](https://code.visualstudio.com/)
 
 2. set up java jdk  here :point_right:   [vscode for java](https://code.visualstudio.com/docs/java/java-tutorial)
-2. Go to Extension and in the search bar look for 'Java Extension Pack' 
+    - download the installer for your Operating System (windows/mac)
+    
+3. Go to Extension and in the search bar look for 'Java Extension Pack' 
     - this package includes the java code runner so we can launch the game.
     - details of the extension here  :point_right: [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
-3. That should do it! :star: Go to src/unsw/dungeon/FrontendApplication.java :star: and click on 'Run' on top of the main function.
+4. That should do it! :star: Go to src/unsw/dungeon/FrontendApplication.java :star: and click on 'Run' on top of the main function.
 
 
 **IMPORTANT**: Please do not push the contents of the *lib* or *bin* folders to your Gitlab repository. This is very likely to push you over the memory limits for the milestone 2 and 3 submissions.
