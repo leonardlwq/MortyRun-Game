@@ -212,23 +212,23 @@ public class DungeonController {
                 player.moveUp();
             break;
         case DOWN:
-            if(dungeon.getPauseStatus())
+            if(!dungeon.getPauseStatus())
                 player.moveDown();
             break;
         case LEFT:
-            if(dungeon.getPauseStatus())
+            if(!dungeon.getPauseStatus())
                 player.moveLeft();
             break;
         case RIGHT:
-            if(dungeon.getPauseStatus())
+            if(!dungeon.getPauseStatus())
                 player.moveRight();
             break;
         case X:
-            if(dungeon.getPauseStatus())
+            if(!dungeon.getPauseStatus())
         	    player.useSword();
         	break;
         case D:
-            if(dungeon.getPauseStatus())
+            if(!dungeon.getPauseStatus())
                 player.dropKey();
             break;
         case SPACE:
