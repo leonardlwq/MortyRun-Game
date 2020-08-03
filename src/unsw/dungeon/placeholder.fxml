@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane fx:id="game_container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPress" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="squares">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+
+      </GridPane>
+      <ImageView fx:id="keyStatus" fitHeight="47.0" fitWidth="59.0" layoutX="67.0" layoutY="" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="goldStatus" fitHeight="47.0" fitWidth="59.0" layoutX="284.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/gold_pile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="goldIterator" layoutX="342.0" layoutY="348.0" text="× 0" />
+      <ImageView fx:id="potionStatus" fitHeight="47.0" fitWidth="59.0" layoutX="153.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/brilliant_blue_new.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="potion_timeDisplay" layoutX="215.0" layoutY="355.0" text="--" />
+   </children>
+</Pane>

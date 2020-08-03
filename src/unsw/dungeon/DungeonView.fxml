@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane fx:id="borderpane" onKeyPressed="#handleKeyPress" styleClass="bodybg" stylesheets="@dungeon.css" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+<top>
+<StackPane fx:id="alignmentAttemptTop">
+      <Text fx:id="GameTitle" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="RUN!!" wrappingWidth="582.5390625">
+         <BorderPane.margin>
+             <!--<Insets left="25.0%" right="25.0%"/>-->
+        </BorderPane.margin>
+         <font>
+            <Font name="Bitstream Vera Serif Bold" size="48.0" />
+         </font>
+         <fill>
+            <RadialGradient centerY="0.0913461538461539" cycleMethod="REFLECT" focusAngle="57.53" focusDistance="1.0" radius="0.6309523809523809">
+               <stops>
+                  <Stop color="#280c83" />
+                  <Stop color="#b3b983" offset="0.9962962962962963" />
+                  <Stop color="#b3b983" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <DropShadow color="#dd18da" />
+         </effect>
+      </Text>
+   </StackPane>
+</top>
+<left>
+<Pane minHeight="300" minWidth="100">
+   <padding>
+      <Insets right="30.0" />
+   </padding>
+<!--<Label text="Key Status:" />-->
+<ImageView fx:id="playerStatus" fitWidth="30.0" layoutX="30.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <!--<image>
+            <Image url="@../key.png" />
+         </image>-->
+</ImageView>
+
+<ImageView fx:id="keyDisplay" layoutX="25.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../key.png" />
+         </image>
+</ImageView>
+
+<ImageView layoutX="1.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../greatsword_1_new.png" />
+         </image>
+</ImageView>
+<Label fx:id="swordDisplay" layoutX="30.0" layoutY="119.0" text=" Uses Left: --" textFill="WHITE" />
+
+<ImageView layoutX="1.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../red.png" />
+         </image>
+</ImageView>
+<Label fx:id="potionDuration" layoutX="30.0" layoutY="149.0" text=" : 00" textFill="WHITE" />
+
+
+
+</Pane>
+</left>
+<center>
+   <StackPane>
+      
+      <GridPane fx:id="squares">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+
+         </children>
+      </GridPane>
+      <Button fx:id="menuBtn" layoutX="76.0" layoutY="242.0" onAction="#returnToMain" mnemonicParsing="false" prefHeight="49.0" prefWidth="111.0" stylesheets="@start_style.css" text="Main Menu" textFill="#101110">
+         <font>
+            <Font name="Bitstream Vera Sans Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#cf0893" />
+         </effect>
+      </Button>
+   </StackPane>
+</center>
+<right>
+   <Pane minHeight="300">
+      <ImageView layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pressure_plate.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="switchDisplay" layoutX="50.0" layoutY="14.0" text="--/--" textFill="#f8f1f1" />
+      <ImageView layoutX="10.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../rick.png" />
+               </image>
+      </ImageView>
+      <Label fx:id="enemyDisplay" layoutX="50.0" layoutY="47.0" text="--/--" textFill="WHITE" />
+
+      <ImageView layoutX="10.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gem.png" />
+               </image>
+      </ImageView>
+      <Label fx:id="treasureDisplay" layoutX="50.0" layoutY="91.0" text="--/--" textFill="WHITE" />
+      <Label fx:id="GoalDisplay" layoutX="10.0" layoutY="120.0" text="--" textFill="WHITE" />
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+   </Pane>
+</right>
+<bottom>
+   <StackPane fx:id="alignmentAttempt">
+      <Text fx:id="credits" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TEAM-SG" wrappingWidth="582.5390625">
+         <BorderPane.margin>
+             <!--<Insets left="25.0%" right="25.0%"/>-->
+        </BorderPane.margin>
+         <font>
+            <Font name="Bitstream Vera Serif Bold" size="48.0" />
+         </font>
+         <fill>
+            <RadialGradient centerY="0.0913461538461539" cycleMethod="REFLECT" focusAngle="57.53" focusDistance="1.0" radius="0.6309523809523809">
+               <stops>
+                  <Stop color="#280c83" />
+                  <Stop color="#b3b983" offset="0.9962962962962963" />
+                  <Stop color="#b3b983" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <DropShadow color="#dd18da" />
+         </effect>
+      </Text>
+   </StackPane>
+</bottom>
+</BorderPane>
