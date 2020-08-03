@@ -86,7 +86,7 @@ If getting to an exit is one of a conjunction of conditions, it must be done las
 
 <details>
 <summary>notes for setting goals </summary>
-<br>
+<p>
 This application will read from a JSON file containing a complete specification of the dungeon (the initial position of entities, goal, etc.).
 
 The dungeon files have the following format:
@@ -124,6 +124,7 @@ In the case of a more complex goal, *goal* is the logical operator and the addit
   ]
 }
 ```
+</p>
 </details>
 
 
