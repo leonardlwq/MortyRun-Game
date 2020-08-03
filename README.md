@@ -10,8 +10,8 @@
 ---
 
 ## Overview
-This project was done for a object oriented programming course in UNSW. 
-
+This project was done for a object oriented programming course in UNSW. Written by Leonard Lee and Zachary Tan.
+Special thanks to Well son and Wei ze! 
 
 ## Setup
 
