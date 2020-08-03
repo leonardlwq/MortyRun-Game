@@ -16,28 +16,23 @@ This project was done for a object oriented programming course in UNSW.
 
 ## Setup
 
-1. Download and set-up Visual Studio Code here :point_right:  [VSCode](https://code.visualstudio.com/)
-2. 
+1. Download and set-up Visual Studio Code here :point_right:   [VSCode](https://code.visualstudio.com/)
 
-The repository provided has already been setup to run the starter-game, and tested on a CSE machine (using VLAB). To play the starter game, clone the repository onto your CSE machine on VLAB, open the root directory of the repository in VSCode, and click the *"Run"* link above the *main* method of **DungeonApplication.java**
+2. set up java jdk  here :point_right:   [vscode for java](https://code.visualstudio.com/docs/java/java-tutorial)
+2. Go to Extension and in the search bar look for 'Java Extension Pack' 
+    - this package includes the java code runner so we can launch the game.
+    - details of the extension here  :point_right: [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
-Note that this works because *lib/symlink_javafx* is a symbolic link to a copy of JavaFX in the cs2511 class account. To make this work on a non-CSE computer, you will need to delete the *symlink_javafx* symbolic link, then download and unzip the latest version of the JavaFX JDK for Java 11 for your Operating System (taking into account if you have a 64 or 32 bit machine), and transfer the contents of the *lib* folder inside the JDK download into the *lib* folder on your cloned repository. You will also need to change the *launch.json* file to refer to **"./lib"** instead of **./lib/symlink_javafx** in the *"vmArgs"* configuration (note these modifications were tested on Windows 10).
+3. That should do it! :star: Go to src/unsw/dungeon/FrontendApplication.java :star: and click on 'Run' on top of the main function.
 
-You may also need to copy the contents of the *bin* folder in the unzipped JavaFX JDK download into a *bin* folder under the root directory of your cloned repository (e.g. for Windows).
-
-The following version of the JavaFX JDK is recommended if you choose to run it on your computer, since it is the same version as on the CSE machine:
-
-https://gluonhq.com/products/javafx/
-
-Note that if you deviate from this precise directory structure, you may need to modify the VSCode configuration in *.vscode/launch.json* to be able to run the game in VSCode.
-
-If the steps in the above instructions worked, you should be able to run the starter code.
 
 **IMPORTANT**: Please do not push the contents of the *lib* or *bin* folders to your Gitlab repository. This is very likely to push you over the memory limits for the milestone 2 and 3 submissions.
 
-## Preliminary client requirements
+## The different levels
 
-The client desires an application that lets the user move a player around a dungeon and try to overcome various challenges in order to "complete" the dungeon by reaching some goal. The simplest form of such a puzzle is a maze, where the player must find their way from the starting point to the exit.
+
+The client desires an application that lets the user move a player around a dungeon and try to overcome various challenges in order to "complete" the level by reaching some goal. 
+
 
 ![Maze][maze]
 
