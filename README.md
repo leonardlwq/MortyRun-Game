@@ -1,50 +1,23 @@
-# Project
+# Morty's Run Game
 
 ## Aims
 
 * Appreciate issues in user interface design
-
 * Learn practical aspects of graphical user interface programming
-
 * Learn more about the Java class libraries
-
-* Learn the application of design patterns.
-
-## Due Dates
-
-Milestone 1: 9AM Tuesday Week 7 (Demonstration: Week 7 Lab)
-
-Milestone 2: 9AM Tuesday Week 8 (Demonstration: Week 8 Lab)
-
-Final milestone: 9AM Monday Week 10 (Demonstration: Week 10 Lab)
-
-**NOTE:** There is **NO** provision for late submissions with a late penalty. Not submitting by the deadline is considered non-submission.
-
-## Value: 35 marks
+* Learn the application of design patterns
+* Make a wacky game in the process
 
 ---
 
 ## Overview
+This project was done for a object oriented programming course in UNSW. 
 
-You have received a request from a client for an application for the playing of dungeon-style puzzles. With a partner from your lab class, you will follow an agile development process to design and implement a desktop Java application that satisfies the requirements of the client (see below). The final piece of software you deliver is expected to be of professional quality, user-friendly, and demonstrate the knowledge and skills you have acquired in this course.
 
-## Partner
+## Setup
 
-You should by now have a partner and group set-up on webcms3, after following the week-03 lab instructions. Your repositories will be created from these webcms3 groups.
-
-If you do not have a webcms3 project group yet, you will be randomly assigned to a group.
-
-Only groups of 2 are allowed by default. Groups of 1 are never allowed without special consideration, since this violates course learning outcomes requiring teamwork.
-
-Once created, your group Gitlab repository will be available here (replace *GROUP_NAME* with your group's name):
-
-https://gitlab.cse.unsw.edu.au/COMP2511/20T2/GROUP_NAME
-
-## Project setup
-
-**NOTE**: For the first milestone, it is not necessary to set up the project in VSCode.
-
-Because this project uses JavaFX, to use it on a non-CSE computer, additional setup will be needed.
+1. Download and set-up Visual Studio Code here :point_right:  [VSCode](https://code.visualstudio.com/)
+2. 
 
 The repository provided has already been setup to run the starter-game, and tested on a CSE machine (using VLAB). To play the starter game, clone the repository onto your CSE machine on VLAB, open the root directory of the repository in VSCode, and click the *"Run"* link above the *main* method of **DungeonApplication.java**
 
