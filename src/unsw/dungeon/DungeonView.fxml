@@ -125,7 +125,7 @@
       <Label fx:id="treasureDisplay" layoutX="50.0" layoutY="91.0" text="--/--" textFill="WHITE" />
       <Label fx:id="GoalDisplay" layoutX="10.0" layoutY="120.0" text="--" textFill="WHITE" />
          <padding>
-            <Insets right="30.0" />
+            <Insets right="70.0" />
          </padding>
    </Pane>
 </right>
