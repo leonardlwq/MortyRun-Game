@@ -2,7 +2,7 @@
 
 ## Aims
 
-* Appreciate issues in user interface design
+* Appreciate issues in user interface design 
 * Learn practical aspects of graphical user interface programming
 * Learn more about the Java class libraries
 * Learn the application of design patterns
@@ -11,7 +11,9 @@
 
 ## Overview
 This project was done for a object oriented programming course in UNSW. Written by Leonard Lee and Zachary Tan.
-Special thanks to Well son and Wei ze!! 
+Special thanks to Well son and Wei ze!! :+1: 
+
+:movie_camera: Sample gameplay on [YouTube](https://youtu.be/YhUICZXryDs) 
 
 ## Setup
 
